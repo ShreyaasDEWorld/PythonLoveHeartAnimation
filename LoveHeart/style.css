@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background: #000;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* -----------------------------
+   TITLE
+----------------------------- */
+
+h1 {
+
+    position: absolute;
+
+    top: 50px;
+
+    color: #fff;
+
+    font-size: 42px;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #ffb6df,
+        0 0 25px #ff69b4,
+        0 0 40px #ff1493;
+}
+
+
+/* -----------------------------
+   HEART CONTAINER
+----------------------------- */
+
+#heart-container {
+
+    position: relative;
+
+    width: 700px;
+    height: 600px;
+}
+
+
+/* -----------------------------
+   MOVING TEXT
+----------------------------- */
+
+.love-word {
+
+    position: absolute;
+
+    color: #f7a6d2;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    pointer-events: none;
+
+    text-shadow:
+        0 0 3px #fff,
+        0 0 6px #ffb6df,
+        0 0 12px #ff69b4,
+        0 0 22px #ff1493;
+
+    transform-origin: center;
+
+    will-change: transform, left, top;
+
+}
+
+
+/* -----------------------------
+   Different brightness
+----------------------------- */
+
+.love-word.dim {
+
+    opacity: 0.55;
+
+    font-size: 11px;
+
+}
+
+
+.love-word.bright {
+
+    color: #ffd6ec;
+
+    font-size: 15px;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff69b4,
+        0 0 35px #ff1493;
+
+}
+
+
+/* -----------------------------
+   Bottom text
+----------------------------- */
+
+.bottom-text {
+
+    position: absolute;
+
+    bottom: 50px;
+
+    color: white;
+
+    font-size: 24px;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 5px white,
+        0 0 15px #ff69b4,
+        0 0 30px #ff1493;
+}
+
+
+/* -----------------------------
+   Mobile
+----------------------------- */
+
+@media (max-width: 750px) {
+
+    h1 {
+
+        font-size: 30px;
+
+        top: 35px;
+
+    }
+
+    #heart-container {
+
+        transform: scale(0.65);
+
+    }
+
+    .bottom-text {
+
+        font-size: 18px;
+
+        bottom: 30px;
+
+    }
+
+}
